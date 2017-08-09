@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Keyboard Tester</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+
+        <div id="custom-words-container">
+            <div style="width: 50%; margin: 0 auto;">
+                <span style="float: left;" class="text">Wprowadź słowa:</span>
+                <textarea id="custom-words">Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker</textarea>
+                <button id="save-custom-words">Zapisz</button>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="input-container">
+                <span id="time">0:00</span>
+                <input id="word-input" type="text">
+            </div>
+            <div id="word-container">
+                <span id="word"></span>
+                <span id="previous-word" style="display: block; font-size: large;"></span>
+            </div>
+        </div>
+
+        <div id="score-container" style="text-align: center; display: none;">
+            <h1 class="block" id="total-score">Wynik: <span id="score">12</span>%</h1>
+            <span class="block">Ilość słów poprawnych: <span id="correct-words">33</span></span>
+            <span class="block">Ilość słów niepoprawnych: <span id="incorrect-words">32</span></span>
+            <div style="margin-top: 20px;">
+                <button id="try-again">Jeszcze raz</button>
+                <button id="new-words">Ustaw nowe słowa</button>
+            </div>
+        </div>
+
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
